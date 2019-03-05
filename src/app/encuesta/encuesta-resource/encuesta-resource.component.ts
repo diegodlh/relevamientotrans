@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormioResourceComponent } from 'angular-formio/resource';
 
 @Component({
-  selector: 'app-event-resource',
-  templateUrl: './event-resource.component.html',
-  styleUrls: ['./event-resource.component.scss']
+  selector: 'app-encuesta-resource',
+  templateUrl: './encuesta-resource.component.html',
+  styleUrls: ['./encuesta-resource.component.scss']
 })
-export class EventResourceComponent extends FormioResourceComponent implements OnInit {}
+export class EncuestaResourceComponent extends FormioResourceComponent implements OnInit {}

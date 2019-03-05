@@ -69,4 +69,4 @@ import { EventResourceComponent } from './event-resource/event-resource.componen
     }
   ]
 })
-export class EventModule { }
+export class EncuestaModule { }

@@ -6,7 +6,7 @@ import { FormioModule } from 'angular-formio';
 import { FormioAuth, FormioAuthRoutes } from 'angular-formio/auth';
 
 export const authRoutes = FormioAuthRoutes({
-  login: LoginComponent
+  // login: LoginComponent
 });
 
 @NgModule({

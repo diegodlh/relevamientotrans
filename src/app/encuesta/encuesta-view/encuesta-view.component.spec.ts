@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventResourceComponent } from './event-resource.component';
+import { EncuestaViewComponent } from './encuesta-view.component';
 
-describe('EventResourceComponent', () => {
-  let component: EventResourceComponent;
-  let fixture: ComponentFixture<EventResourceComponent>;
+describe('EncuestaViewComponent', () => {
+  let component: EncuestaViewComponent;
+  let fixture: ComponentFixture<EncuestaViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EventResourceComponent ]
+      declarations: [ EncuestaViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EventResourceComponent);
+    fixture = TestBed.createComponent(EncuestaViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

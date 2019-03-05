@@ -25,7 +25,7 @@ import {
         name: 'participant',
         form: 'participant',
         parents: [
-          'event',
+          'encuesta',
           {
             field: 'user',
             resource: 'currentUser',

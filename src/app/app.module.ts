@@ -38,18 +38,18 @@ import './components/CheckMatrix';
         path: 'auth',
         loadChildren: './auth/auth.module#AuthModule'
       },
+      // {
+      //   path: 'form',
+      //   loadChildren: './form/form.module#FormModule'
+      // },
       {
-        path: 'form',
-        loadChildren: './form/form.module#FormModule'
-      },
-      {
-        path: 'event',
-        loadChildren: './event/event.module#EventModule'
-      },
-      {
-        path: 'employee',
-        loadChildren: './employee/employee.module#EmployeeModule'
-      }
+        path: 'encuesta',
+        loadChildren: './encuesta/encuesta.module#EncuestaModule'
+      }//,
+      // {
+      //   path: 'employee',
+      //   loadChildren: './employee/employee.module#EmployeeModule'
+      // }
     ], {useHash: true})
   ],
   providers: [

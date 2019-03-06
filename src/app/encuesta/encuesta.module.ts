@@ -6,13 +6,14 @@ import {
   FormioResource,
   FormioResourceConfig,
   FormioResourceService,
-  FormioResourceIndexComponent,
+  // FormioResourceIndexComponent,
   // FormioResourceCreateComponent,
   FormioResourceEditComponent,
   FormioResourceDeleteComponent
 } from 'angular-formio/resource';
 import { EventViewComponent } from './event-view/event-view.component';
 import { EventResourceComponent } from './event-resource/event-resource.component';
+import { EncuestaIndexComponent } from './encuesta-index/encuesta-index.component'
 import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.component';
 
 @NgModule({
@@ -23,7 +24,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
     RouterModule.forChild([
       {
         path: '',
-        component: FormioResourceIndexComponent
+        component: EncuestaIndexComponent
+        // component: FormioResourceIndexComponent
       },
       {
         path: 'new',
@@ -62,6 +64,7 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
   declarations: [
     EventViewComponent,
     EventResourceComponent,
+    EncuestaIndexComponent,
     EncuestaCreateComponent
   ],
   providers: [

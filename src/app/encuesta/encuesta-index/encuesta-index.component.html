@@ -1,0 +1,2 @@
+<input type="text" (input)="onInput($event)" placeholder="Buscar...">
+<formio-grid [src]="gridSrc" [query]="gridQuery" [refresh]="refreshQuery" (Form)="service.formLoaded" (rowSelect)="onSelect($event)" (error)="service.onError($event)" (createItem)="onCreateItem()" [createText]="createText" ></formio-grid> 

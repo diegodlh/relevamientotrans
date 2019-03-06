@@ -11,8 +11,8 @@ import {
   FormioResourceEditComponent,
   FormioResourceDeleteComponent
 } from 'angular-formio/resource';
-import { EventViewComponent } from './event-view/event-view.component';
-import { EventResourceComponent } from './event-resource/event-resource.component';
+import { EncuestaViewComponent } from './encuesta-view/encuesta-view.component';
+import { EncuestaResourceComponent } from './encuesta-resource/encuesta-resource.component';
 import { EncuestaIndexComponent } from './encuesta-index/encuesta-index.component'
 import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.component';
 
@@ -34,7 +34,7 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
       },
       {
         path: ':id',
-        component: EventResourceComponent,
+        component: EncuestaResourceComponent,
         children: [
           {
             path: '',
@@ -43,7 +43,7 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
           },
           {
             path: 'view',
-            component: EventViewComponent
+            component: EncuestaViewComponent
           },
           {
             path: 'edit',
@@ -62,8 +62,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
     ])
   ],
   declarations: [
-    EventViewComponent,
-    EventResourceComponent,
+    EncuestaViewComponent,
+    EncuestaResourceComponent,
     EncuestaIndexComponent,
     EncuestaCreateComponent
   ],

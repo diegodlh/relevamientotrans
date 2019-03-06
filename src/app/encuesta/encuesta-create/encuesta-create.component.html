@@ -1,0 +1,8 @@
+<h3 *ngIf="service.form" style="margin-top:0;">
+	<a routerLink="../" class="back-button">
+		<i class="fa fa-chevron-left glyphicon glyphicon-chevron-left">
+		</i>
+	</a>
+	| Nueva {{ service.form.title }} 
+</h3>
+<formio [form]="service.form" [submission]='{"data": {"cargadorx": auth.user.data.nombre}}' [refresh]="service.refresh" [error]="onError" [success]="onSuccess" (submit)="onSubmit($event)" ></formio>

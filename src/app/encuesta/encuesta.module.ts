@@ -76,8 +76,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
     {
       provide: FormioResourceConfig,
       useValue: {
-        name: 'event',
-        form: 'event'
+        name: 'encuesta',
+        form: 'encuesta'
       }
     }
   ]

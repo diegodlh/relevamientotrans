@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormioModule } from 'angular-formio';
+import { FormioGrid } from 'angular-formio/grid';
 import {
   FormioResource,
   FormioResourceComponent,
@@ -22,6 +23,7 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
   imports: [
     CommonModule,
     FormioModule,
+    FormioGrid,
     FormioResource,
     RouterModule.forChild([
       {

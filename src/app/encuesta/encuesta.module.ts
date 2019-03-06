@@ -50,11 +50,11 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
           {
             path: 'delete',
             component: FormioResourceDeleteComponent
-          },
-          {
-            path: 'participant',
-            loadChildren: './participant/participant.module#ParticipantModule'
-          }
+          }//,
+          // {
+          //   path: 'participant',
+          //   loadChildren: './participant/participant.module#ParticipantModule'
+          // }
         ]
       }
     ])

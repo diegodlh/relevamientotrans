@@ -4,15 +4,17 @@ import { RouterModule } from '@angular/router';
 import { FormioModule } from 'angular-formio';
 import {
   FormioResource,
+  FormioResourceComponent,
   FormioResourceConfig,
   FormioResourceService,
+  FormioResourceViewComponent,
   // FormioResourceIndexComponent,
   // FormioResourceCreateComponent,
   FormioResourceEditComponent,
   FormioResourceDeleteComponent
 } from 'angular-formio/resource';
-import { EncuestaViewComponent } from './encuesta-view/encuesta-view.component';
-import { EncuestaResourceComponent } from './encuesta-resource/encuesta-resource.component';
+// import { EncuestaViewComponent } from './encuesta-view/encuesta-view.component';
+// import { EncuestaResourceComponent } from './encuesta-resource/encuesta-resource.component';
 import { EncuestaIndexComponent } from './encuesta-index/encuesta-index.component'
 import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.component';
 
@@ -34,7 +36,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
       },
       {
         path: ':id',
-        component: EncuestaResourceComponent,
+        component: FormioResourceComponent,
+        // component: EncuestaResourceComponent,
         children: [
           {
             path: '',
@@ -43,7 +46,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
           },
           {
             path: 'view',
-            component: EncuestaViewComponent
+            component: FormioResourceViewComponent
+            // component: EncuestaViewComponent
           },
           {
             path: 'edit',
@@ -62,8 +66,8 @@ import { EncuestaCreateComponent } from './encuesta-create/encuesta-create.compo
     ])
   ],
   declarations: [
-    EncuestaViewComponent,
-    EncuestaResourceComponent,
+    // EncuestaViewComponent,
+    // EncuestaResourceComponent,
     EncuestaIndexComponent,
     EncuestaCreateComponent
   ],

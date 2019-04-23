@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { EncuestaResourceComponent } from './encuesta/encuesta-resource/encuesta-resource.component';
+import { EncuestaViewComponent } from './encuesta/encuesta-view/encuesta-view.component';
 
 import './components/CheckMatrix';
 
@@ -19,7 +21,9 @@ import './components/CheckMatrix';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    HeroComponent
+    HeroComponent,
+    EncuestaResourceComponent,
+    EncuestaViewComponent
   ],
   imports: [
     BrowserModule,

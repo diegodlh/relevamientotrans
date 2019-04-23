@@ -15,10 +15,21 @@ export class EncuestaCreateComponent extends FormioResourceCreateComponent imple
 		service: FormioResourceService, 
 		route: ActivatedRoute, 
 		router: Router, 
-		config: FormioResourceConfig, 
+		config: FormioResourceConfig,
 		public auth: FormioAuthService
 	) {
 		super(service, route, router, config);
 		// this.service.resource = {"data": {"cargadorx": auth.user.data.nombre}};
 	}
+	onSubmit = function (submission) {
+        var _this = this;
+        this.service
+            .save(submission)
+            .then(function () {
+            _this.router.navigate(['../'], {
+                relativeTo: _this.route
+            });
+        })
+            .catch(function (err) { return _this.onError.emit(err); });
+    };
 }

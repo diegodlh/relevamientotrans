@@ -1,0 +1,11 @@
+--- node_modules/formiojs/components/datagrid/DataGrid.js	2019-05-03 15:21:23.907324034 -0300
++++ DataGrid.js	2019-05-03 15:22:02.491323517 -0300
+@@ -436,7 +436,7 @@
+ 
+       var visibleComponentsAmount = this.visibleComponents ? this.visibleComponents.length : 0; //should build if visible columns changed
+ 
+-      shouldBuildRows = shouldBuildRows || visibleColumnsAmount !== visibleComponentsAmount; //loop through all rows and check if there is field in new value that differs from current value
++      shouldBuildRows = shouldBuildRows || true; //loop through all rows and check if there is field in new value that differs from current value
+ 
+       var keys = this.componentComponents.map(function (component) {
+         return component.key;

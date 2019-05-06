@@ -1,3 +1,0 @@
-- derivadas de preguntas 3.1 y 2.1 va a haber que limpiarlas para anular respuestas que no corresponden según nuevos criterios (refugio/calle y terciario/universitario incompleto, respectivamente).
-- pregunta 5.2 va a haber que transformar respuestas únicas en respuestas múltiples con una sola opción
-- 
